@@ -82,7 +82,7 @@
           }
         },
         "timestamp": {
-          "builder": "@angular-builders/timestamp:file",
+          "builder": "@sifawm/timestamp:file",
           "options": {}
         },
         "lint": {

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-packageName=@angular-builders/jest
+packageName=@sifawm/jest
 filename=jest-builder.tgz
 set -eE;
 trap 'echo ERROR: $BASH_SOURCE:$LINENO $BASH_COMMAND >&2;' ERR
