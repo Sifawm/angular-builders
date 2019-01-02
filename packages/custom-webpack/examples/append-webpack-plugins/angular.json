@@ -11,7 +11,7 @@
       "schematics": {},
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@sifawm/custom-webpack:browser",
           "options": {
             "customWebpackConfig": {
               "path": "./extra-webpack.config.js"
@@ -51,7 +51,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/dev-server:generic",
+          "builder": "@sifawm/dev-server:generic",
           "options": {
             "browserTarget": "append-webpack-plugins:build"
           },

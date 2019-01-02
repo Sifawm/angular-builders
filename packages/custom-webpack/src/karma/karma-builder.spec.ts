@@ -38,8 +38,9 @@ describe('Custom webpack karma builder test', () => {
     const options = {customWebpackConfig: 'custom.webpack.js', tsConfig: 'blah'};
     buildWebpackConfigMock.mockReturnValue(mergedConfig);
     const root = normalize(`${__dirname}/../../../../`);
-    const config = builder.buildWebpackConfig(root, root, normalize('./'), {} as any, options as NormalizedCustomWebpackKarmaBuildSchema);
+    const config = builder.buildWebpackConfig(root, root, normalize('./'), {} as any, options as unknown as NormalizedCustomWebpackKarmaBuildSchema);
     expect(buildWebpackConfigMock).toHaveBeenCalledWith(root, options.customWebpackConfig, angularConfigs, options);
 
     expect(config).toEqual(mergedConfig);
+  });
 });

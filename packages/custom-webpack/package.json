@@ -1,5 +1,5 @@
 {
-  "name": "@angular-builders/custom-webpack",
+  "name": "@sifawm/custom-webpack",
   "version": "7.1.1",
   "description": "Custom webpack builders for Angular build facade. Allow to modify Angular build configuration without ejecting it",
   "main": "src/index.js",
